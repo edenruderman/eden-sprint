@@ -1,0 +1,99 @@
+body {
+  background-color: #c2e9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 20vmin;
+  font-size: 6vmin;
+}
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 30vmin);
+  grid-template-rows: repeat(4, 30vmin);
+  gap: 3.5vmin;
+  background: #ccc;
+}
+.cell {
+  background-color: #aaa;
+  border-radius: 30vmin;
+  position: relative;
+  height: 75px;
+  width: 75px;
+  border: 3px rgb(255, 255, 255) outset;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.cell:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.Cover {
+  background: #594;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.lives {
+  height: 120px;
+  width: 200px;
+  background-color: black;
+  color: rgb(247, 247, 247);
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+}
+h1 {
+  color: rgb(247, 247, 247);
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+.smile {
+  position: absolute;
+  left: 570px;
+  bottom: 375px;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.restart {
+  width: 40%;
+  height: 40%;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 9, 9, 0.6);
+  backdrop-filter: blur(9px);
+  z-index: 5;
+}
+h2 {
+  font-size: 100px;
+  color: #594;
+}

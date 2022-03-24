@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mines.css" />
+    <title>MINES</title>
+  </head>
+  <body onload="init()">
+    <button class="smile" onclick="init()">😃</button>
+
+    <div class="table"></div>
+    <div class="lives">
+      <h1></h1>
+    </div>
+    <div class="modal hidden">
+      <button class="smile" onclick="init()">🤯</button>
+      <h2>lets play again!</h2>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="mines.js"></script>
+    <script src="utils.js"></script>
+  </body>
+</html>
